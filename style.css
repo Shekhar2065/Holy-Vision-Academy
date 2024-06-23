@@ -45,9 +45,9 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 }
 
 
-a.active,a:hover{
+nav a.active, nav a:hover{
   border-radius: 3px;
-  background-color: rgb(0, 51, 255);
+  background-color: #0033ff;
   transition: .6s;
   color: white;
 }
@@ -216,42 +216,7 @@ body {
 }
 
 
-.call-button {
-  display: none;
-  position: fixed;
-  bottom: 15px;
-  right: 20px;
-  /* Adjust the spacing from the edges as needed */
-}
 
-.call-button button {
-  padding: 17px 40px;
-  border-radius: 50px;
-  cursor: pointer;
-  border: 0;
-  background-color: white;
-  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-size: 15px;
-  transition: all 0.5s ease;
-}
-
-.call-button button:hover {
-  letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
-}
-
-.call-button button:active {
-  letter-spacing: 3px;
-  background-color: hsl(261deg 80% 48%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
-  transform: translateY(10px);
-  transition: 100ms;
-}
 
 .bgimg{
   background-image:url("IMG_0377.jpg");
@@ -271,18 +236,7 @@ margin-top: 0px;
     height: 100vw;
   }
 
- .call-button button {
-    padding: 10px 25px;
-    border-radius: 50px;
-    cursor: pointer;
-    border: 0;
-    background-color: white;
-    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: 10px;
-    transition: all 0.5s ease;
-  }
+ 
 
 }
 
@@ -389,7 +343,6 @@ padding-top: 15px;
   border-radius: 10px;
   cursor: pointer;
   margin-top: 10px;
-
   margin-left: 10%;
   transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -428,14 +381,14 @@ margin-top: 20px;
 }
 
 
-.messages h3{
-  font-size: 15px;
-  font-weight: 10;
-  width: 80%;
+.messages p{
   margin: 0 auto;
-  text-align: justify;
   margin-top: 20px;
-font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: justify;
+  width: 80%;
+  height: 100%;
+ font-size: 15px;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .principle-pfp img{
@@ -466,21 +419,6 @@ text-align: center;
   margin-bottom: 100px;
 }
 
-@media (max-width:600px){
-
-  .img-fixed{
-    background-image: url(428660164_1559199101496443_6702520513403638329_n.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size:cover;
-    width: 100%;
-    height: 300px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-
-  
-}
 
 .image-container {
   margin: 0 auto;
@@ -745,7 +683,7 @@ margin: 0 auto;
   transition: max-height 0.2s ease-out;
   border-radius: 5px;
 }
-.panel p{
+.panel p{ 
   padding: 0px;
 }
 
@@ -1006,5 +944,6 @@ footer h4{
   background-color: rgba(219, 219, 219, 0.466);
   backdrop-filter: blur(4px);
 }
+
 
 
