@@ -71,3 +71,24 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active");
   }
 })
+
+function showPopup() {
+  document.getElementById('popup').classList.add('show');
+  document.getElementById('popup-overlay').classList.add('show');
+  document.body.classList.add('no-scroll');
+}
+
+// Function to hide the pop-up
+function hidePopup() {
+  document.getElementById('popup').classList.remove('show');
+  document.getElementById('popup-overlay').classList.remove('show');
+  document.body.classList.remove('no-scroll');
+}
+
+// Event listener to close the pop-up when the close button is clicked
+document.getElementById('close-btn').addEventListener('click', hidePopup);
+
+// Show the pop-up when the page loads
+window.onload = function() {
+  showPopup();
+}
