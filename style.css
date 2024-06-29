@@ -9,6 +9,7 @@ a{
   font-size:20px;
 }
      .popup {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: none;
             position: fixed;
             left: 50%;
