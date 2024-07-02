@@ -696,6 +696,7 @@ svg{
 
 .accordion-container{
   padding-top: 20px;
+  padding-bottom: 50px;
   width: 80%;
 margin: 0 auto;
 }
