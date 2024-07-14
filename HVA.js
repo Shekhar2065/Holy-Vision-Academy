@@ -91,4 +91,4 @@ document.getElementById('close-btn').addEventListener('click', hidePopup);
 // Show the pop-up when the page loads
 window.onload = function() {
   showPopup();
-}
+} 

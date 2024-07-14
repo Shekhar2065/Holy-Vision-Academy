@@ -10,7 +10,6 @@ a{
 }
      .popup {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: none;
             position: fixed;
             left: 50%;
             top: 50%;
@@ -21,11 +20,11 @@ a{
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
             z-index: 1000;
             border-radius: 10px;
+            display: none;
         }
 
        @media(max-width:450px){
         .popup {
-          display: none;
           position: fixed;
           left: 50%;
           top: 50%;
@@ -36,6 +35,7 @@ a{
           box-shadow: 0 5px 15px rgba(0,0,0,0.3);
           z-index: 1000;
           border-radius: 10px;
+          display: none;
       }
        }
         .popup.show {
@@ -770,12 +770,12 @@ margin: 0 auto;
 }
 
 hr{
-margin-top: 10px;
+margin-top: 20px;
   margin-bottom: 0px;
 }
 
 main{
-  padding-top: 30px;
+  padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 30px;
@@ -788,8 +788,7 @@ main{
 }
 
 main img:hover{
-   transform: scale(1.15);
-   transition: .5s;
+   opacity: 0.5;
 }
 
 @media(max-width:500px){
@@ -806,23 +805,23 @@ main img:hover{
   }
 
   main img:hover{
-    transform: scale(1.2);
-    transition: .5s;
+   opacity: 0.5s;
  }
   
 }
 
 
 main h3 {
-  text-decoration: underline;
-  color: #000000;
+  padding: 10px 10px;
+  background-color: white;
+  border: .5px solid black; 
+  color: black;
   text-align: center;
   font-size: 15px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .box img{
-  overflow: hidden;
   margin-top: 0px;
   border: 1px solid rgb(97, 96, 96);
 width: 100%;
