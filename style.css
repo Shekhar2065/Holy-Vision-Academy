@@ -774,12 +774,6 @@ margin-top: 20px;
   margin-bottom: 0px;
 }
 
-@media(min-width:1492px){
-  hr{
-    margin-top: 150px;
-      margin-bottom: 0px;
-    }
-}
 
 main{
   padding-top: 10px;
