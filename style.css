@@ -111,7 +111,7 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 
 nav a.active, nav a:hover{
   border-radius: 3px;
-  background-color: #0033ff;
+  background-color: #2a94ff;
   transition: .6s;
   color: white;
 }
@@ -140,6 +140,7 @@ label svg{
 
 @media (max-width: 900px){
 
+
   nav ul li{
     margin: 0px 15px;
     margin-bottom: 20px;
@@ -158,7 +159,7 @@ label svg{
    }
 
    nav ul{
-    z-index: 2;
+      z-index: 1;
        font-size: 25px;
        position: absolute;
        top: -100%;
@@ -761,13 +762,87 @@ margin: 0 auto;
   color: #3d3aa8;
 }
 
-.Hva-gallery{
- padding-left: 16%;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding-top: 49px;
-  font-size: 20px;
-  color: #C59F61;
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #49a0f7;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  font-weight: bold;
+
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item p{
+  font-size: 1px;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 
 hr{
 margin-top: 20px;
@@ -830,6 +905,7 @@ border-radius: 10px;
 }
 
 
+
 footer img{
  max-width: 300px;
  padding-top: 10px;
@@ -837,15 +913,15 @@ margin: 0 auto;
 }
 
 footer p {
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: Helvetica, Arial, Georgia, Tahoma and Roboto;
+  font-size: 10px;
   text-align: center;
   margin-top: 15px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer a{
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .social-media{
