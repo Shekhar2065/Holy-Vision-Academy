@@ -620,78 +620,7 @@ margin-top: 20px;
 }
 
 
-.contactlist{
-  background-color:#5b56f0;
-  height:550px;
-  width:1518px;
-  position:absolute;
-  top:100px;
-  left:0px;
-}
 
-.contactlist h1{
-  color: white;
-  font-size:40px;
-  position:absolute;
-  top:50px;
-  left:200px;
- text-decoration: underline;
-}
-
-.contactlist-info{
-  color:white;
-  font-size:25px;
-  position:absolute;
-  top:150px;
-  left:160px;
-}
-
-.contactlist-info li{
-  list-style-type: none;
-  margin:10px;
-}
-
-.contactlist iframe{
-  position:absolute;
-  left:850px;
-  height: 480px;
-  width: 668px;
-}
-
-
-.contact{
-  background-color: white;
-  width: 100%;
-  padding-bottom: 20px;
-}
-
-.contact iframe{
-  width: 100%;
-  height: 50vh;
-}
-
-.ways-contact h1{
-  color: #5b56f0;
-padding-top: 20px;
-text-align: center;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-.ways-contact h2{
-  padding-top: 20px;
-text-align: center;
-font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 20px;
-padding-bottom: 20px;
-}
-
-.ways-contact span{
-font-weight: 50;
-}
-
-svg{
-  color: #5b56f0;
-}
 
 
 .accordion-container{
@@ -1122,4 +1051,101 @@ html {
 
 .to-top svg{
  height: 100px;
+}
+
+
+/* contact us */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+
+
+.school-contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+.school-contact-container h1 {
+  text-align: center;
+  color: #007bff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.school-contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.school-contact-info div {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  padding: 15px;
+  background: #e0f7ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.school-contact-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.school-map {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.school-form-section {
+  margin: 30px 0;
+  background: #e0f7ff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.school-form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-form-section label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.school-form-section input,
+.school-form-section textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.school-form-section button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.school-form-section button:hover {
+  background-color: #0056b3;
 }
